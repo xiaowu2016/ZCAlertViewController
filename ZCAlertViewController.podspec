@@ -1,4 +1,4 @@
-pod::Spec.new do |s|
+Pod::Spec.new do |s|
   s.name         = "ZCAlertViewController"
   s.version      = "0.0.1"
   s.summary      = "自定义弹框"
@@ -10,7 +10,7 @@ pod::Spec.new do |s|
   #s.public_header_files = 'ZCAlertViewController/{*}.h'
   s.preserve_paths = 'ZCAlertViewController/*.h'
   s.libraries = 'ZCAlertViewController'
-  s.resources = "ZCAlertViewController/**/*.*"
+  s.resources = "ZCAlertViewController/ZCSettings.bundle"
   s.vendored_libraries = 'lib/libZCAlertViewController.a'
   s.requires_arc = true
   s.platform = :ios,"7.0"
