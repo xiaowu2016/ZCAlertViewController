@@ -375,6 +375,25 @@ typedef void(^StringBLOCK)(NSString *aString);
                  AndButtonString:(NSArray *)array
                   AndButtonStyle:(nullable NSArray *)dicArray
                    AndBlockArray:(nullable NSArray<BLOCK> *)blockArray;
+
+/**
+ *  自定义一个菊花弹框
+ *
+ *  @param title             弹框的标题
+ *  @param backgroundType    弹框的背景样式，如果想要显示默认的可以传－1
+ *  @param showAnimationType 弹框的显示方式,如果想要显示默认的可以传－1
+ *  @param hideAnimationType 弹框的关闭方式,如果想要显示默认的可以传－1
+ *  @param text              弹框正文
+ */
+- (void)showZCWaitingWithTitle:(nullable NSString *)title
+             AndBackgroundType:(ZCAlertViewBackground)backgroundType
+          AndShowAnimationType:(ZCAlertViewShowAnimation)showAnimationType
+          AndHideAnimationType:(ZCAlertViewHideAnimation)hideAnimationType
+                       AndText:(nullable NSString *)text;
+/**
+ *  关闭菊花
+ */
+- (void)closeZCWaiting;
 @end
 
 NS_ASSUME_NONNULL_END
